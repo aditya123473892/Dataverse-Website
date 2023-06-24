@@ -19,20 +19,20 @@ const Contact = () => {
   return (
     <section id='contact'>
       <h5>Get In Touch</h5>
-      <h2>Contact Me</h2>
+      <h2>Contact Us</h2>
 
       <div className="container contact__container">
         <div className="contact__options">
           <article className="contact__option">
             <HiOutlineMail className='contact__options-icon'/>
             <h4>Email</h4>
-            <h5>saiaryan.goswami1784@gmail.com</h5>
+            <h5>......</h5>
             <a href="https://mailto:saiaryan.goswami1784@gmail.com" target='_blank'>Send a message</a>
           </article>
           <article className="contact__option">
             <BsWhatsapp className='contact__options-icon'/>
             <h4>Whatsapp</h4>
-            <h5>number bhool gaya</h5>
+            <h5>.......</h5>
             <a href="https://api.whatsapp.com/send?phone=+918810666903" target='_blank'>Send a message</a>
           </article>
         </div>
