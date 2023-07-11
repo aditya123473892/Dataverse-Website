@@ -1,17 +1,71 @@
-import React from 'react'
-import './nav.css'
-export default function Nav() {
+import React, { useState } from "react";
+
+import "./nav.css";
+
+function NavBar() {
+  const [click, setClick] = useState(false);
+
+  
   return (
-    <div className='container'>
+    <>
+      <nav className="navbar">
+        <div className="nav-container">
+          <li exact to="/" className="nav-logo">
+           Dataverse
+            <i className="fas fa-code"></i>
+          </li>
+
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li className="nav-item">
+              <li
+                exact
+                to="/"
+                activeClassName="active"
+                className="nav-links"
+               
+              >
+                Home
+              </li>
+            </li>
+            <li className="nav-item">
+              <li
+                exact
+                to="/about"
+                activeClassName="active"
+                className="nav-links"
+                
+              >
+                About
+              </li>
+            </li>
+            <li className="nav-item">
+              <li
+                exact
+                to="/blog"
+                activeClassName="active"
+                className="nav-links"
+                
+              >
+                Blog
+              </li>
+            </li>
+            <li className="nav-item">
+              <li
+                exact
+                to="/contact"
+                activeClassName="active"
+                className="nav-links"
+              
+              >
+                Contact Us
+              </li>
+            </li>
+          </ul>
         
-        <h2> Data Verse    </h2>
-            
-        <ul>
-        <h4> <li>home        </li></h4>
-        <h4>  <li>about us    </li></h4>
-        <h4> <li> contact us </li></h4>
-        <h4> <li> help       </li></h4>
-        </ul>
-    </div>
-  )
+        </div>
+      </nav>
+    </>
+  );
 }
+
+export default NavBar;
